@@ -12,7 +12,21 @@ import lombok.NoArgsConstructor;
 @Table(name = "User")
 
 public class User {
+    public String getNombre() {
+        return Nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.Nombre = nombre;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        this.Email = email;
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
